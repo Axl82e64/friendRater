@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		DC2766C021FCD3AE00497F4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2766BF21FCD3AE00497F4C /* AppDelegate.swift */; };
-		DC2766C221FCD3AE00497F4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2766C121FCD3AE00497F4C /* ViewController.swift */; };
 		DC2766C521FCD3AE00497F4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2766C321FCD3AE00497F4C /* Main.storyboard */; };
 		DC2766C721FCD3AF00497F4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2766C621FCD3AF00497F4C /* Assets.xcassets */; };
 		DC2766CA21FCD3AF00497F4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2766C821FCD3AF00497F4C /* LaunchScreen.storyboard */; };
+		DC2766DD21FCDE5400497F4C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2766DC21FCDE5400497F4C /* Person.swift */; };
+		DC2766DF21FCE0C000497F4C /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2766DE21FCE0C000497F4C /* Relationship.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC2766BC21FCD3AE00497F4C /* friendRater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = friendRater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2766BF21FCD3AE00497F4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC2766C121FCD3AE00497F4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC2766C421FCD3AE00497F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC2766C621FCD3AF00497F4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC2766C921FCD3AF00497F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC2766CB21FCD3AF00497F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC2766DC21FCDE5400497F4C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DC2766DE21FCE0C000497F4C /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,63 @@
 		DC2766BE21FCD3AE00497F4C /* friendRater */ = {
 			isa = PBXGroup;
 			children = (
-				DC2766BF21FCD3AE00497F4C /* AppDelegate.swift */,
-				DC2766C121FCD3AE00497F4C /* ViewController.swift */,
+				DC2766DA21FCD6B900497F4C /* Models */,
+				DC2766D921FCD6B700497F4C /* Views */,
+				DC2766D821FCD6B500497F4C /* View Controllers */,
+				DC2766D721FCD6B400497F4C /* Storyboards */,
+				DC2766D621FCD6B100497F4C /* New Group */,
 				DC2766C321FCD3AE00497F4C /* Main.storyboard */,
-				DC2766C621FCD3AF00497F4C /* Assets.xcassets */,
-				DC2766C821FCD3AF00497F4C /* LaunchScreen.storyboard */,
-				DC2766CB21FCD3AF00497F4C /* Info.plist */,
+				DC2766DB21FCD6D200497F4C /* Resources */,
 			);
 			path = friendRater;
+			sourceTree = "<group>";
+		};
+		DC2766D621FCD6B100497F4C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DC2766D721FCD6B400497F4C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DC2766D821FCD6B500497F4C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DC2766D921FCD6B700497F4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC2766DA21FCD6B900497F4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC2766DC21FCDE5400497F4C /* Person.swift */,
+				DC2766DE21FCE0C000497F4C /* Relationship.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC2766DB21FCD6D200497F4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC2766C621FCD3AF00497F4C /* Assets.xcassets */,
+				DC2766C821FCD3AF00497F4C /* LaunchScreen.storyboard */,
+				DC2766BF21FCD3AE00497F4C /* AppDelegate.swift */,
+				DC2766CB21FCD3AF00497F4C /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC2766C221FCD3AE00497F4C /* ViewController.swift in Sources */,
+				DC2766DD21FCDE5400497F4C /* Person.swift in Sources */,
+				DC2766DF21FCE0C000497F4C /* Relationship.swift in Sources */,
 				DC2766C021FCD3AE00497F4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RHAGP4FBH;
-				INFOPLIST_FILE = friendRater/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/friendRater/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RHAGP4FBH;
-				INFOPLIST_FILE = friendRater/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/friendRater/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
